@@ -121,13 +121,20 @@ export default function DashboardPage() {
         )}
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             href="/chat"
             className="bg-primary-600 text-white rounded-lg shadow p-6 hover:bg-primary-700 transition-colors"
           >
             <h3 className="text-lg font-semibold mb-2">Log Food</h3>
             <p className="text-sm opacity-90">Use natural language to log your meals</p>
+          </Link>
+          <Link
+            href="/food-logs"
+            className="bg-blue-600 text-white rounded-lg shadow p-6 hover:bg-blue-700 transition-colors"
+          >
+            <h3 className="text-lg font-semibold mb-2">Food History</h3>
+            <p className="text-sm opacity-90">View and edit your food logs</p>
           </Link>
           <Link
             href="/recipes"
@@ -137,11 +144,32 @@ export default function DashboardPage() {
             <p className="text-sm opacity-90">Manage your custom recipes</p>
           </Link>
           <Link
+            href="/analytics"
+            className="bg-orange-600 text-white rounded-lg shadow p-6 hover:bg-orange-700 transition-colors"
+          >
+            <h3 className="text-lg font-semibold mb-2">Analytics</h3>
+            <p className="text-sm opacity-90">View weekly and monthly trends</p>
+          </Link>
+          <Link
             href="/body-metrics"
             className="bg-purple-600 text-white rounded-lg shadow p-6 hover:bg-purple-700 transition-colors"
           >
             <h3 className="text-lg font-semibold mb-2">Body Metrics</h3>
             <p className="text-sm opacity-90">Track your weight and measurements</p>
+          </Link>
+          <Link
+            href="/manual-entry"
+            className="bg-teal-600 text-white rounded-lg shadow p-6 hover:bg-teal-700 transition-colors"
+          >
+            <h3 className="text-lg font-semibold mb-2">Manual Entry</h3>
+            <p className="text-sm opacity-90">Quick form for logging food</p>
+          </Link>
+          <Link
+            href="/settings"
+            className="bg-gray-600 text-white rounded-lg shadow p-6 hover:bg-gray-700 transition-colors"
+          >
+            <h3 className="text-lg font-semibold mb-2">Settings</h3>
+            <p className="text-sm opacity-90">Manage API keys and preferences</p>
           </Link>
         </div>
 
